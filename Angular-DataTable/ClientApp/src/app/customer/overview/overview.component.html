@@ -1,0 +1,7 @@
+<a mat-raised-button color="primary" href="" [routerLink]="['/details']">Add new Customer</a>
+<app-list [dataSource]="dataSource"
+          [totalCount]="totalCount"
+          (onDeleteCustomer)="delete($event)"
+          (onPageSwitch)="switchPage($event)"></app-list>
+
+
